@@ -2,14 +2,14 @@ server:
   port: 8082
 spring:
   application:
-    name: cart-service
+    name: pay-service
   cloud:
     nacos:
       server-addr: 192.168.139.203:8848
   profiles:
     active: local
   datasource:
-    url: jdbc:mysql://${hm.db.host}:3306/hm-trade?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${hm.db.host}:3306/hm-pay?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ${hm.db.pw}
