@@ -1,11 +1,11 @@
 server:
-  port: 8082
+  port: 8085
 spring:
   application:
-    name: cart-service
+    name: trade-service
   cloud:
     nacos:
-      server-addr: 192.168.139.203:8848
+      server-addr: 192.168.5.193:8848
   profiles:
     active: local
   datasource:
@@ -41,7 +41,7 @@ knife4j:
         group-name: default
         api-rule: package
         api-rule-resources:
-          - com.hmall.cart.controller
+          - com.hmall.trade.controller
 feign:
   okhttp:
     enabled: true # 开启OKHttp功能
