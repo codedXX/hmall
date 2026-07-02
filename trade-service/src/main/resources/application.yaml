@@ -5,7 +5,7 @@ spring:
     name: trade-service
   cloud:
     nacos:
-      server-addr: 192.168.5.193:8848
+      server-addr: 192.168.139.203:8848
   profiles:
     active: local
   datasource:
